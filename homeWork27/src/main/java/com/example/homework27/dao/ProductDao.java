@@ -45,7 +45,7 @@ public class ProductDao {
 
     public List<Product> getByCartId(Long id) {
         return jdbcTemplate.query("SELECT * FROM product WHERE cart_id=?",
-                        new Object[]{id},
-                        new BeanPropertyRowMapper<>(Product.class));
+                new Object[]{id},
+                new BeanPropertyRowMapper<>(Product.class));
     }
 }

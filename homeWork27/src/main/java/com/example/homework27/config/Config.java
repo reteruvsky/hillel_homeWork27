@@ -45,11 +45,4 @@ public class Config {
         cartDao.setJdbcTemplate(jdbcTemplateCart());
         return cartDao;
     }
-
-//    @Bean
-//    public CartDao cartDao() {
-//        CartDao cartDao = new CartDao();
-//        cartDao.setJdbcTemplate(jdbcTemplateCart());
-//        return cartDao;
-//    }
 }
